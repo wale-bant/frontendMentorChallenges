@@ -9,7 +9,7 @@
   /* ## Primary */
   --red: hsl(0, 78%, 62%);
   --cyan: hsl(180, 62%, 55%);
-  -orange: hsl(34, 97%, 64%);
+  --orange: hsl(34, 97%, 64%);
   --blue: hsl(212, 86%, 64%);
   /* ## Neutral */
   --dark-blue: hsl(234, 12%, 34%);
@@ -17,9 +17,126 @@
   --light-gray: hsl(0, 0%, 98%);
 
   /* Typography */
-  --font-size: 15px;
+  --font-size: 0.8em;
   --font-family: "Poppins", sans-serif;
   --fw-heavy: 600;
   --fw-medium: 400;
   --fw-light: 200;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--gray-blue);
+  background: var(--light-gray);
+}
+
+.header {
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+.header .text-one {
+  font-weight: var(--fw-medium);
+  margin-bottom: -1em;
+  font-size: 2em;
+}
+
+.header .text-two {
+  font-weight: var(--fw-heavy);
+  font-size: 2em;
+}
+
+.header .product-description {
+  font-size: 1.2em;
+  color: var(--gray-blue);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2em;
+  margin: 5em 20px;
+}
+
+.card-container .card {
+  padding: 1rem;
+  border: 0.5px solid var(--light-gray);
+  border-radius: 0.8em;
+  border-top-width: 4px;
+  box-shadow: 1px 7px 15px -10px var(--cyan);
+}
+
+.card-container .card .card-image {
+  margin-left: 15em;
+  padding: 1em;
+}
+
+.card-container .card .card-title {
+  color: var(--dark-blue);
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+
+.card-container .supervisor {
+  border-top-color: var(--cyan);
+}
+
+.card-container .team-builder {
+  border-top-color: var(--red);
+}
+
+.card-container .karma {
+  border-top-color: var(--orange);
+}
+
+.card-container .calculator {
+  border-top-color: var(--blue);
+}
+.card-container .card .card-description {
+  font-size: 1.15em;
+}
+
+@media only screen and (min-width: 405px) {
+  .header .product-description {
+    width: 500px;
+    word-wrap: break-word;
+    margin: 0 auto;
+  }
+
+  .card-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 25em);
+    grid-row-gap: 2em;
+    grid-column-gap: 2em;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "tl tc tr"
+      "cl cc cr"
+      "bl bc br";
+    margin: 5em 20px;
+  }
+
+  .card-container .supervisor {
+    grid-area: cl;
+  }
+
+  .card-container .team-builder {
+    grid-area: tc;
+    margin-bottom: -10em;
+  }
+
+  .card-container .karma {
+    grid-area: bc;
+    margin-top: -10em;
+  }
+
+  .card-container .calculator {
+    grid-area: cr;
+  }
+}
+
+.footer {
+  text-align: center;
 }
