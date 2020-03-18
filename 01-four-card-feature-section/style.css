@@ -68,7 +68,7 @@ body {
 }
 
 .card-container .card .card-image {
-  margin-left: 15em;
+  margin-left: 16em;
   padding: 1em;
 }
 
@@ -97,7 +97,7 @@ body {
   font-size: 1.15em;
 }
 
-@media only screen and (min-width: 405px) {
+@media only screen and (min-width: 500px) {
   .header .product-description {
     width: 500px;
     word-wrap: break-word;
