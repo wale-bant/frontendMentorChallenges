@@ -17,6 +17,8 @@ function validate() {
   if (!firstName.value) {
     firstName.style.border = '1.5px solid rgba(255, 0, 0, .5)';
     getElement('form-row', 'first-name-error').style.display = 'block';
+    getElement('form-row', 'first-name-error-icon').style.visibility =
+      'visible';
   }
   if (!lastName.value) {
     lastName.style.border = '1.5px solid rgba(255, 0, 0, .5)';
