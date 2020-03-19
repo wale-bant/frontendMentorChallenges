@@ -23,14 +23,17 @@ function validate() {
   if (!lastName.value) {
     lastName.style.border = '1.5px solid rgba(255, 0, 0, .5)';
     getElement('form-row', 'last-name-error').style.display = 'block';
+    getElement('form-row', 'last-name-error-icon').style.visibility = 'visible';
   }
   if (!email.value) {
     email.style.border = '1.5px solid rgba(255, 0, 0, .5)';
     getElement('form-row', 'email-error').style.display = 'block';
+    getElement('form-row', 'email-error-icon').style.visibility = 'visible';
   }
   if (!password.value) {
     password.style.border = '1.5px solid rgba(255, 0, 0, .5)';
     getElement('form-row', 'password-error').style.display = 'block';
+    getElement('form-row', 'password-error-icon').style.visibility = 'visible';
   }
 
   if (firstName.value || lastName.value || email.value || password.value)

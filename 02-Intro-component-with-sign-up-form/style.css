@@ -59,7 +59,6 @@ body {
 }
 
 .try-it .price {
-  /* display: table; */
   word-break: break-word;
 }
 
@@ -74,17 +73,29 @@ body {
 .form-row {
 }
 
-.input {
-  padding: 1em;
-  margin-bottom: 1em;
-  border: 1px solid var(--grayish-blue);
+.input,
+.btn {
   border-radius: 0.3em;
-  font-weight: var(--fw-medium);
   font-size: 1em;
-  width: 15em;
   outline: none;
-  position: relative;
-  left: 1em;
+  font-weight: var(--fw-medium);
+  padding: 1em;
+  border: 1px solid var(--grayish-blue);
+}
+
+.input {
+  width: 15em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.btn {
+  padding: 1em 2em 0.5em 2em;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background: var(--green);
+  border-bottom: 5px solid hsl(154, 59%, 45%);
 }
 
 .error {
@@ -95,29 +106,17 @@ body {
   margin-bottom: 1.5em;
   font-size: 0.7em;
   font-style: italic;
-  margin-right: 2em;
+  margin-right: 3em;
   font-weight: var(--fw-medium);
 }
 
 .error-icon {
   visibility: hidden;
+  /* display: none; */
   position: relative;
   right: 2em;
   top: 0.3em;
   width: 20px;
-}
-
-.btn {
-  background: var(--green);
-  border: none;
-  padding: 1em 2.3em 0.5em 2.3em;
-  outline: none;
-  color: #fff;
-  font-weight: var(--fw-medium);
-  border-radius: 0.3em;
-  font-size: 1em;
-  border-bottom: 5px solid hsl(154, 59%, 45%);
-  cursor: pointer;
 }
 
 .terms-box {
@@ -141,7 +140,7 @@ body {
   .container {
     display: flex;
     flex-direction: row;
-    margin-top: 5em;
+    margin-top: 3em;
   }
 
   .text-section,
@@ -167,6 +166,6 @@ body {
   }
 
   .btn {
-    width: 90%;
+    width: 88.2%;
   }
 }
