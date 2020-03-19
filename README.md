@@ -10,4 +10,6 @@ Link to challenges: https://www.frontendmentor.io/challenges
 
 [01-four-card-feature-section](https://01-four-card-feature-section.now.sh/)
 
+[02-intro-component-with-sign-up-form](https://02-intro-component-with-sign-up-form.now.sh/)
+
 Let's Go!! 🚀
