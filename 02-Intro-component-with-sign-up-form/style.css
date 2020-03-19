@@ -18,6 +18,8 @@
   --dark-blue: hsl(249, 10%, 26%);
   --grayish-blue: hsl(246, 25%, 77%);
 
+  --shadow: 0 10px 6px -3px hsl(0, 0%, 47%);
+
   /* Typography */
   --font-size: 0.8em;
   --font-family: "Poppins", sans-serif;
@@ -25,4 +27,144 @@
   --fw-medium: 600;
   --fw-light: 500;
   --fw-low: 400;
+}
+
+body {
+  font-family: var(--font-family);
+  text-align: center;
+  color: #fff;
+  background-image: url("./images/bg-intro-mobile.png");
+  background-color: var(--red);
+}
+
+.text-section .title-two::before {
+  content: "\A";
+  white-space: pre;
+}
+
+.form-section {
+  width: 20em;
+  margin: 2em auto;
+}
+
+.try-it {
+  background: var(--blue);
+  padding: 1em;
+  border-radius: 0.7em;
+  box-shadow: var(--shadow);
+}
+
+.try-it .days {
+  font-weight: var(--fw-medium);
+}
+
+.try-it .price {
+  /* display: table; */
+  word-break: break-word;
+}
+
+.form {
+  border-radius: 0.7em;
+  padding: 2em 0;
+  background: #fff;
+  margin-top: 2em;
+  box-shadow: var(--shadow);
+}
+
+.form-row {
+}
+
+.input {
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid var(--grayish-blue);
+  border-radius: 0.3em;
+  font-weight: var(--fw-medium);
+  font-size: 1em;
+  width: 15em;
+  outline: none;
+}
+
+.error {
+  display: none;
+  color: rgba(255, 0, 0, 0.5);
+  text-align: right;
+  margin-top: -1em;
+  margin-bottom: 1.5em;
+  font-size: 0.7em;
+  font-style: italic;
+  margin-right: 2em;
+  font-weight: var(--fw-medium);
+}
+
+.error-icon {
+  /* display: none; */
+  position: relative;
+  right: 2em;
+  top: 0.2em;
+  width: 20px;
+}
+
+.btn {
+  background: var(--green);
+  border: none;
+  padding: 1em 2.3em 0.5em 2.3em;
+  outline: none;
+  color: #fff;
+  font-weight: var(--fw-medium);
+  border-radius: 0.3em;
+  font-size: 1em;
+  border-bottom: 5px solid hsl(154, 59%, 45%);
+  cursor: pointer;
+}
+
+.terms-box {
+  color: var(--grayish-blue);
+  font-size: 0.7em;
+  margin: 0 auto;
+  margin-top: 1em;
+  font-weight: var(--fw-medium);
+  width: 75%;
+}
+.terms-box .terms {
+  color: rgba(255, 0, 0, 0.5);
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    background-image: url("./images/bg-intro-desktop.png");
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5em;
+  }
+
+  .text-section,
+  .form-section {
+    width: 40%;
+  }
+
+  .text-section {
+    text-align: left;
+    height: 300px;
+    position: relative;
+    top: 8em;
+    margin: 3em;
+  }
+
+  .form-section {
+    width: 35em;
+    margin: 2em;
+  }
+
+  .input {
+    width: 80%;
+  }
+
+  .btn {
+    width: 90%;
+  }
 }
