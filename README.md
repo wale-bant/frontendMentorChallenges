@@ -8,7 +8,7 @@ Link to challenges: https://www.frontendmentor.io/challenges
 
 > **Note:** Challenges are grouped to **branches** according to their diffuclty.
 
-### Newbie Challenges Solutions link
+### Newbie Challenge Solutions
 
 [01-four-card-feature-section](https://01-four-card-feature-section.now.sh/)
 
