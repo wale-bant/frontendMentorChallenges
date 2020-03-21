@@ -14,4 +14,6 @@ Link to challenges: https://www.frontendmentor.io/challenges
 
 [03-base-apparel-page](https://03-base-apparel-page.now.sh/)
 
+[04-single-price-grid](http://04-single-price-grid.now.sh/)
+
 Let's Go!! 🚀
