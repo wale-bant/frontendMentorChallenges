@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap");
+
+:root {
+  /* Layout */
+  --mobile: 375px;
+  --desktop: 1440px;
+
+  /* Colors */
+
+  /* Primary */
+  --blue: hsl(223, 87%, 63%);
+  /* Secondayr */
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+
+  /* Neutral */
+  --gray: hsl(0, 0%, 59%);
+  --dark-blue: hsl(209, 33%, 12%);
+
+  --shadow: 0 10px 6px -3px hsl(0, 80%, 86%);
+
+  /* Typography */
+  --font-size: 2.5em;
+  --font-family: "Libre Franklin", sans-serif;
+  --fw-heavy: 700;
+  --fw-medium: 600;
+  --fw-light: 300;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: var(--light-gray);
+  font-family: var(--font-family);
+}
+
+.container {
+  width: 80%;
+  margin: 2.5em auto;
+  box-shadow: 5px 10px 20px 5px hsl(218, 22%, 80%);
+}
+
+section {
+  padding: 1.5em;
+}
+
+.join {
+  background: #fff;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.join .title {
+  color: var(--cyan);
+}
+
+.join .description {
+  color: var(--gray-blue);
+  line-height: 1.5em;
+}
+
+.join .info {
+  color: var(--bright-yellow);
+  margin: 1.5em 0;
+}
+
+.monthly {
+  background: var(--cyan);
+  color: #fff;
+}
+
+.monthly .price {
+  font-size: 2em;
+  margin: 0.5em 0 0.2em 0;
+  font-weight: var(--fw-heavy);
+}
+
+.monthly .price span {
+  color: var(--light-gray);
+  font-size: 0.5em;
+  position: relative;
+  top: -5px;
+  left: 10px;
+}
+
+.monthly button {
+  margin-top: 1.5em;
+  width: 100%;
+  border: none;
+  padding: 1em;
+  border-radius: 0.3em;
+  background: var(--bright-yellow);
+  color: #fff;
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  outline: none;
+}
+
+.monthly button:hover {
+  box-shadow: 0px 2px 6px 2px hsl(218, 22%, 60%);
+}
+
+.monthly .title,
+.why-us .title {
+  color: #fff;
+}
+
+.why-us {
+  background: var(--light-cyan);
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.why-us .description {
+  color: var(--light-gray);
+  margin-left: -1.7em;
+  white-space: pre;
+  line-height: 1.5em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "tl tr"
+      "bl br";
+    margin-top: 5em;
+    width: 70vw;
+  }
+
+  .join {
+    grid-area: tl;
+    grid-column: span 2;
+  }
+
+  .monthly {
+    grid-area: bl;
+    border-bottom-left-radius: 0.5em;
+  }
+
+  .why-us {
+    grid-area: br;
+    border-bottom-left-radius: 0;
+  }
+}
