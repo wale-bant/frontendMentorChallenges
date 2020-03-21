@@ -16,4 +16,6 @@ Link to challenges: https://www.frontendmentor.io/challenges
 
 [04-single-price-grid](http://04-single-price-grid.now.sh/)
 
+[05-ping-coming-soon](https://05-ping-coming-soon.now.sh/)
+
 Let's Go!! 🚀

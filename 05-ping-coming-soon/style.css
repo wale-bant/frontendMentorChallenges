@@ -17,10 +17,8 @@
   --gray: hsl(0, 0%, 59%);
   --dark-blue: hsl(209, 33%, 12%);
 
-  --shadow: 0 10px 6px -3px hsl(0, 80%, 86%);
-
   /* Typography */
-  --font-size: 2.5em;
+  --font-size: 1.5rem;
   --font-family: "Libre Franklin", sans-serif;
   --fw-heavy: 700;
   --fw-medium: 600;
@@ -32,92 +30,110 @@
 }
 
 body {
-  background: var(--light-gray);
   font-family: var(--font-family);
+  margin: 2em;
+  text-align: center;
+  font-size: var(--font-size);
 }
 
-.container {
-  width: 80%;
-  margin: 2.5em auto;
-  box-shadow: 5px 10px 20px 5px hsl(218, 22%, 80%);
+header {
+  margin-bottom: 1.5em;
 }
 
-section {
-  padding: 1.5em;
+header img {
+  width: 2em;
 }
 
-.join {
-  background: #fff;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
+section h1 {
+  font-size: 0.9em;
+  font-weight: var(--fw-light);
+  margin-bottom: 0.8em;
+  color: var(--gray);
+  font-size: var(--font-size);
 }
 
-.join .title {
-  color: var(--cyan);
-}
-
-.join .description {
-  color: var(--gray-blue);
-  line-height: 1.5em;
-}
-
-.join .info {
-  color: var(--bright-yellow);
-  margin: 1.5em 0;
-}
-
-.monthly {
-  background: var(--cyan);
-  color: #fff;
-}
-
-.monthly .price {
-  font-size: 2em;
-  margin: 0.5em 0 0.2em 0;
+section h1 .soon {
   font-weight: var(--fw-heavy);
+  color: var(--dark-blue);
 }
 
-.monthly .price span {
-  color: var(--light-gray);
-  font-size: 0.5em;
+section p {
+  font-size: 0.6em;
+  margin-bottom: 2.2em;
+}
+
+.email-container input {
+  padding: 1em 3em;
+  padding-left: 2em;
+  border-radius: 5em;
+  outline: none;
+  border: 1px solid var(--pale-blue);
+}
+
+.email-container input::placeholder {
+  color: var(--gray);
+}
+
+.email-container .error-text {
+  font-size: 0.45em;
   position: relative;
-  top: -5px;
-  left: 10px;
+  top: 5px;
+  font-style: italic;
+  color: var(--light-red);
+  display: none;
 }
 
-.monthly button {
-  margin-top: 1.5em;
-  width: 100%;
-  border: none;
-  padding: 1em;
-  border-radius: 0.3em;
-  background: var(--bright-yellow);
+button {
+  padding: 1em 8em;
+  border-radius: 5em;
   color: #fff;
-  font-weight: var(--fw-medium);
+  border: none;
   cursor: pointer;
   outline: none;
+  font-weight: var(--fw-medium);
+  background: var(--blue);
+  position: relative;
+  top: 10px;
 }
 
-.monthly button:hover {
-  box-shadow: 0px 2px 6px 2px hsl(218, 22%, 60%);
+button:hover {
+  box-shadow: 0 4px 14px var(--pale-blue);
 }
 
-.monthly .title,
-.why-us .title {
+.illustration {
+  width: 70vw;
+  margin: 2em 0;
+}
+
+.illustration img {
+  width: 100%;
+}
+
+.social-icons {
+  margin: 2em 0;
+}
+
+.fa {
+  color: var(--blue);
+  border: 0.5px solid #ddd;
+  padding: 9px 10px;
+  cursor: pointer;
+  font-size: 0.5em;
+  border-radius: 100%;
+  background: #fff;
+  margin: 0 0.4em;
+}
+
+.fa:hover {
   color: #fff;
+  border: none;
+  background: var(--blue);
 }
 
-.why-us {
-  background: var(--light-cyan);
-  border-bottom-left-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
-}
-
-.why-us .description {
-  color: var(--light-gray);
-  margin-left: -1.7em;
-  white-space: pre;
-  line-height: 1.5em;
+.social-icons p {
+  font-size: 0.45em;
+  margin: 1.5em 0;
+  color: var(--gray);
 }
 
 .attribution {
@@ -129,27 +145,31 @@ section {
 }
 
 @media only screen and (min-width: 500px) {
-  .container {
-    display: grid;
-    grid-template-areas:
-      "tl tr"
-      "bl br";
-    margin-top: 5em;
-    width: 70vw;
+  form {
+    display: flex;
+    justify-content: center;
   }
 
-  .join {
-    grid-area: tl;
-    grid-column: span 2;
+  .email-container input {
+    padding: 1em 6em;
+    padding-left: 2em;
   }
 
-  .monthly {
-    grid-area: bl;
-    border-bottom-left-radius: 0.5em;
+  button {
+    position: relative;
+    top: 0;
+    left: 10px;
+    padding: 1em 2em;
   }
 
-  .why-us {
-    grid-area: br;
-    border-bottom-left-radius: 0;
+  .email-container .error-text {
+    /* position: relative;
+    left: -35px;
+    display: block; */
+  }
+
+  .illustration {
+    margin: 2em auto;
+    width: 450px;
   }
 }

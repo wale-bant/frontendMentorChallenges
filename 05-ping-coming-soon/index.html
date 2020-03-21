@@ -12,13 +12,35 @@
 </head>
 
 <body>
-  <i class="fa fa-car"></i>
-  We are launching soon!
+  <header>
+    <img src="./images/logo.svg" alt="logo">
+  </header>
 
-  Subscribe and get notified
+  <section>
+    <h1>We are launching <span class="soon">soon!</span></h1>
+    <p>Subscribe and get notified</p>
 
-  Notify Me
-  &copy; Copyright Ping. All rights reserved.
+    <form>
+      <div class="email-container">
+        <input type="email" name="email" id="email" placeholder="Your email address...">
+        <p class="error-text">Please provide a valid email address</p>
+      </div>
+
+      <button type="submit">Notify Me</button>
+    </form>
+  </section>
+
+  <div class="illustration">
+    <img src="./images/illustration-dashboard.png" alt="illustration">
+  </div>
+
+  <div class="social-icons">
+    <i class="fa fa-facebook-f"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <p>&copy; Copyright Ping. All rights reserved.</p>
+  </div>
+
 
   <footer>
     <p class="attribution">
@@ -28,5 +50,6 @@
     </p>
   </footer>
 </body>
+<script src="./script.js"></script>
 
 </html>
