@@ -12,3 +12,8 @@ button.addEventListener('click', e => {
     errorMessage.style.display = 'none';
   }
 });
+
+if (window.innerWidth > 500) {
+  const model = document.querySelector('.model');
+  model.setAttribute('src', './images/hero-desktop.jpg');
+}

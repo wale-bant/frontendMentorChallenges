@@ -151,41 +151,56 @@ form .error-message {
 @media only screen and (min-width: 500px) {
   body {
     background-image: url("./images/bg-pattern-desktop.svg");
+    overflow: hidden;
   }
 
   .container {
     display: grid;
-    grid-template-areas:
-      "tl tr"
-      "cl"
-      "bl";
-    grid-template-columns: repeat(2, 1fr);
-
-    /* justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(3, 25em);
-    grid-row-gap: 2em;
+    grid-template-areas: "tl tr";
+    grid-template-columns: repeat(2, 50vw);
     grid-column-gap: 2em;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "tl tc tr"
-      "cl cc cr"
-      "bl bc br";
-    margin: 5em 20px; */
-  }
-  .logo-container {
-    grid-area: tl;
   }
 
   .model-container {
     grid-area: tr;
   }
 
-  .model-container img {
-    width: 200px;
+  .model-container .model {
+    width: 50vw;
+    max-height: 100vh;
+  }
+
+  .logo-container {
+    grid-area: tl;
+    margin-left: 5em;
+    margin-top: 2em;
   }
 
   .info-container {
-    grid-area: cl;
+    grid-area: tl;
+    text-align: left;
+    margin-left: 7em;
+    margin-top: 9em;
+  }
+
+  .info-container .title {
+    font-size: 3.5em;
+  }
+
+  .info-container .description {
+    padding: 0;
+    width: 90%;
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+
+  .form-row {
+    margin-left: 0;
+  }
+
+  form .error-message {
+    position: relative;
+    left: 1.7em;
+    top: 0.5em;
   }
 }

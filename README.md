@@ -12,4 +12,6 @@ Link to challenges: https://www.frontendmentor.io/challenges
 
 [02-intro-component-with-sign-up-form](https://02-intro-component-with-sign-up-form.now.sh/)
 
+[03-base-apparel-page](https://03-base-apparel-page.now.sh/)
+
 Let's Go!! 🚀
