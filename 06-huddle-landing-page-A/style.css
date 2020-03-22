@@ -166,8 +166,6 @@ footer {
 }
 
 .contact .logo {
-  /* width: 600px; */
-  /* height: 20px; */
   margin-top: 5em;
   margin-left: 2em;
   margin-bottom: 1em;
@@ -243,46 +241,57 @@ footer {
   background: #fff;
 }
 
-/* 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
-
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 610px) {
   body {
     overflow-x: hidden;
   }
+
+  header,
+  .index {
+    background-image: url("./images/bg-hero-desktop.svg");
+  }
+
   .card,
   .index {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 2em;
-    width: 35em;
-    margin: 2em auto;
+    /* width: 35em; */
+    margin: 2em 15%;
   }
 
   .index {
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
     text-align: left;
     padding: 0 2em;
     padding-bottom: 1em;
   }
 
+  .index div {
+    width: 19em;
+  }
+  .index div h1 {
+    font-size: 1.2em;
+  }
+
   .index div p {
     margin: 0;
+    font-size: 0.8em;
+  }
+
+  .illustration-container .dash-illustration {
+    width: 140%;
+    margin-left: -130px;
+    position: relative;
+    top: -1em;
   }
 
   .illustration-container {
-    width: 305px;
+    width: 100%;
   }
 
   .illustration {
-    width: 100%;
+    min-width: 250px;
   }
 
   .grow,
@@ -291,13 +300,59 @@ footer {
   }
 
   .description {
-    font-size: 0.9em;
-    margin-top: 2em;
+    font-size: 1em;
+    margin-top: 2.5em;
     text-align: left;
-    width: 305px;
+    width: 80%;
   }
 
   .description p {
     font-size: 0.9em;
+  }
+
+  .bottom-cta-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-cta-container button {
+    margin: 0 auto;
+  }
+
+  footer {
+    display: grid;
+    font-size: 0.7em;
+    padding: 5em 3em;
+    padding-bottom: 2em;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .contact {
+    margin-top: -2em;
+  }
+
+  .links-mobile,
+  .social-icons {
+    margin-top: 7.5em;
+  }
+
+  .links-two {
+    margin-left: -20em;
+  }
+
+  .social-icons {
+    margin-left: -37em;
+  }
+
+  .social-icons p {
+    font-size: 0.7em;
+    position: relative;
+    top: 6em;
+    left: 5em;
+  }
+
+  .fa {
+    padding: 7px 6px;
+    height: 10px;
   }
 }
