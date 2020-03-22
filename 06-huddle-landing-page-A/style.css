@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+:root {
+  /* Layout */
+  --mobile: 375px;
+  --desktop: 1440px;
+
+  /* Colors */
+
+  /* Primary */
+  --pink: hsl(322, 100%, 66%);
+
+  /* Neutral */
+  --pale-cyan: hsl(193, 100%, 96%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --gray-blue: hsl(208, 11%, 55%);
+
+  /* Typography */
+  --font-size: 18px;
+  --font-heading: "Poppins", sans-serif;
+  --fw-heading: 600;
+  --font-body: "Open Sans", sans-serif;
+  --fw-heavy: 700;
+  --fw-light: 400;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  /* font-family: var(--font-family);
+  margin: 2em;
+  text-align: center;
+  font-size: var(--font-size); */
+}
+
+.social-icons {
+  margin: 2em 0;
+}
+
+.fa {
+  color: var(--blue);
+  border: 0.5px solid #ddd;
+  padding: 9px 10px;
+  cursor: pointer;
+  font-size: 0.5em;
+  border-radius: 100%;
+  background: #fff;
+  margin: 0 0.4em;
+}
+
+.fa:hover {
+  color: #fff;
+  border: none;
+  background: var(--blue);
+}
+
+.social-icons p {
+  font-size: 0.45em;
+  margin: 1.5em 0;
+  color: var(--gray);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 500px) {
+}
