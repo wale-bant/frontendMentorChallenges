@@ -253,4 +253,51 @@ footer {
 } */
 
 @media only screen and (min-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  .card,
+  .index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2em;
+    width: 35em;
+    margin: 2em auto;
+  }
+
+  .index {
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+    padding: 0 2em;
+    padding-bottom: 1em;
+  }
+
+  .index div p {
+    margin: 0;
+  }
+
+  .illustration-container {
+    width: 305px;
+  }
+
+  .illustration {
+    width: 100%;
+  }
+
+  .grow,
+  .users {
+    grid-row: 1;
+  }
+
+  .description {
+    font-size: 0.9em;
+    margin-top: 2em;
+    text-align: left;
+    width: 305px;
+  }
+
+  .description p {
+    font-size: 0.9em;
+  }
 }
