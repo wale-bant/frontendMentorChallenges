@@ -58,8 +58,9 @@ header .logo {
   border: none;
   width: 140px;
   font-weight: var(--fw-heavy);
-  box-shadow: 0px 0px 5px 3px var(--pale-cyan);
   background: #fff;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0px 0px 5px 3px var(--pale-cyan);
 }
 .header-cta:hover {
   box-shadow: 0px 0px 5px 3px hsl(193, 22%, 86%);
@@ -72,6 +73,7 @@ h1 {
 .index div h1 {
   padding: 1em 0;
   line-height: 1.5em;
+  font-family: var(--font-heading);
 }
 
 .index div p {
@@ -92,6 +94,7 @@ button {
   color: #fff;
   background: var(--pink);
   font-weight: var(--fw-heavy);
+  border-bottom: 5px solid hsl(322, 63%, 52%);
   box-shadow: 0 0 5px 2px hsla(322, 81%, 33%, 0.31);
 }
 
