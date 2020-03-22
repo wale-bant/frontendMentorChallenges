@@ -18,4 +18,6 @@ Link to challenges: https://www.frontendmentor.io/challenges
 
 [05-ping-coming-soon](https://05-ping-coming-soon.now.sh/)
 
+[06-huddle-landing-page-a](https://06-huddle-landing-page-a.now.sh/)
+
 Let's Go!! 🚀
